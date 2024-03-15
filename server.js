@@ -20,9 +20,10 @@ const PerfilUsuario = mongoose.model('PerfilUsuario', {
   user_is: String,
   fotoPerfil: String,
   nombre: String,
+  cargo: String,
   direccion: String,
   estudios: String,
-  certificaciones: String
+  certificaciones: [{ type: String }] 
 });
 
 // Middleware para analizar solicitudes JSON
@@ -49,6 +50,17 @@ app.get('/perfil', async (req, res) => {
       res.status(500).json({ message: 'Error al obtener los perfiles de usuario' });
     }
   });
+
+// En tu servidor Express
+app.get('/cargos', async (req, res) => {
+  try {
+    const cargos = await PerfilUsuario.distinct('cargo');
+    res.json(cargos);
+  } catch (error) {
+    console.error('Error al obtener los cargos:', error);
+    res.status(500).json({ message: 'Error al obtener los cargos' });
+  }
+});
   
 
 // Iniciar el servidor

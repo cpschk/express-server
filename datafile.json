@@ -1,0 +1,226 @@
+[
+  {
+    "fotoPerfil": "https://example.com/foto1.jpg",
+    "nombre": "Jonathan Peralta Peralta",
+    "direccion": "Calle de la Cruz, Dirección 2",
+    "cargo": "Desarrollador Full Stack",
+    "estudios": "Licenciatura en Ingeniería de Software",
+    "certificaciones": [
+      "Certificación en Desarrollo Web Full Stack",
+      "Certificación en Gestión de Proyectos",
+      "Certificación en Seguridad Informática"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto2.jpg",
+    "nombre": "María García López",
+    "direccion": "Avenida del Sol, Dirección 5",
+    "cargo": "Analista de Datos",
+    "estudios": "Ingeniería en Sistemas de Información",
+    "certificaciones": [
+      "Certificación en Administración de Bases de Datos",
+      "Certificación en Análisis de Datos",
+      "Certificación en Seguridad de la Información"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto3.jpg",
+    "nombre": "Carlos Martínez Rodríguez",
+    "direccion": "Calle Principal, Dirección 10",
+    "cargo": "Ingeniero Civil",
+    "estudios": "Ingeniería Civil",
+    "certificaciones": [
+      "Certificación en Diseño Estructural",
+      "Certificación en Gestión de Proyectos de Construcción"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto4.jpg",
+    "nombre": "Laura González Sánchez",
+    "direccion": "Avenida de la Luna, Dirección 7",
+    "cargo": "Psicóloga Clínica",
+    "estudios": "Licenciatura en Psicología",
+    "certificaciones": [
+      "Certificación en Psicoterapia Cognitivo-Conductual",
+      "Certificación en Psicología Clínica"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto5.jpg",
+    "nombre": "David Pérez Gómez",
+    "direccion": "Calle del Bosque, Dirección 15",
+    "cargo": "Gerente de Proyectos",
+    "estudios": "Licenciatura en Administración de Empresas",
+    "certificaciones": [
+      "Certificación en Gestión de Proyectos",
+      "Certificación en Marketing Digital"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto6.jpg",
+    "nombre": "Ana Rodríguez Martínez",
+    "direccion": "Carrera 3, Dirección 12",
+    "cargo": "Médico Especialista",
+    "estudios": "Licenciatura en Medicina",
+    "certificaciones": [
+      "Certificación en Medicina Interna",
+      "Certificación en Cirugía General",
+      "Certificación en Cardiología"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto7.jpg",
+    "nombre": "Javier López García",
+    "direccion": "Calle del Mar, Dirección 8",
+    "cargo": "Ingeniero Industrial",
+    "estudios": "Ingeniería Industrial",
+    "certificaciones": [
+      "Certificación en Gestión de Calidad",
+      "Certificación en Producción Lean"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto8.jpg",
+    "nombre": "Carmen Sánchez Fernández",
+    "direccion": "Avenida de las Flores, Dirección 20",
+    "cargo": "Abogado",
+    "estudios": "Licenciatura en Derecho",
+    "certificaciones": [
+      "Certificación en Derecho Penal",
+      "Certificación en Derecho Laboral",
+      "Certificación en Derecho Civil"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto9.jpg",
+    "nombre": "Miguel Rodríguez Pérez",
+    "direccion": "Calle de la Esperanza, Dirección 13",
+    "cargo": "Ingeniero Eléctrico",
+    "estudios": "Ingeniería Eléctrica",
+    "certificaciones": [
+      "Certificación en Sistemas de Energía Renovable",
+      "Certificación en Electrónica Industrial"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto10.jpg",
+    "nombre": "Luisa Martínez González",
+    "direccion": "Calle de la Paz, Dirección 17",
+    "cargo": "Pedagoga",
+    "estudios": "Licenciatura en Pedagogía",
+    "certificaciones": [
+      "Certificación en Didáctica de la Educación Infantil",
+      "Certificación en Pedagogía Montessori"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto11.jpg",
+    "nombre": "Diego Gómez Rodríguez",
+    "direccion": "Avenida del Río, Dirección 22",
+    "cargo": "Ingeniero Mecánico",
+    "estudios": "Ingeniería Mecánica",
+    "certificaciones": [
+      "Certificación en Diseño de Máquinas",
+      "Certificación en Termodinámica Aplicada"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto12.jpg",
+    "nombre": "Paula Sánchez García",
+    "direccion": "Calle del Cielo, Dirección 25",
+    "cargo": "Gestor Ambiental",
+    "estudios": "Licenciatura en Ciencias Ambientales",
+    "certificaciones": [
+      "Certificación en Gestión Ambiental",
+      "Certificación en Conservación de la Biodiversidad"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto13.jpg",
+    "nombre": "Jorge Pérez Martínez",
+    "direccion": "Carrera 5, Dirección 18",
+    "cargo": "Especialista en Marketing",
+    "estudios": "Licenciatura en Comunicación",
+    "certificaciones": [
+      "Certificación en Marketing Digital",
+      "Certificación en Comunicación Corporativa"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto14.jpg",
+    "nombre": "Sara García López",
+    "direccion": "Avenida de los Ángeles, Dirección 30",
+    "cargo": "Artista",
+    "estudios": "Licenciatura en Arte",
+    "certificaciones": [
+      "Certificación en Bellas Artes",
+      "Certificación en Historia del Arte"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto15.jpg",
+    "nombre": "Pedro Martínez Sánchez",
+    "direccion": "Calle del Sol, Dirección 27",
+    "cargo": "Ingeniero Químico",
+    "estudios": "Ingeniería Química",
+    "certificaciones": [
+      "Certificación en Seguridad Industrial",
+      "Certificación en Química Orgánica"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto16.jpg",
+    "nombre": "Elena Rodríguez Pérez",
+    "direccion": "Calle de las Estrellas, Dirección 33",
+    "cargo": "Economista",
+    "estudios": "Licenciatura en Economía",
+    "certificaciones": [
+      "Certificación en Finanzas Corporativas",
+      "Certificación en Economía Internacional"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto17.jpg",
+    "nombre": "Pablo González Martínez",
+    "direccion": "Calle de la Montaña, Dirección 28",
+    "cargo": "Ingeniero Aeroespacial",
+    "estudios": "Ingeniería Aeroespacial",
+    "certificaciones": [
+      "Certificación en Diseño de Aeronaves",
+      "Certificación en Dinámica de Vuelo"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto18.jpg",
+    "nombre": "Marta López García",
+    "direccion": "Carrera 7, Dirección 35",
+    "cargo": "Historiadora",
+    "estudios": "Licenciatura en Historia",
+    "certificaciones": [
+      "Certificación en Arqueología",
+      "Certificación en Historia Antigua"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto19.jpg",
+    "nombre": "Juan Sánchez Rodríguez",
+    "direccion": "Avenida de la Libertad, Dirección 40",
+    "cargo": "Ingeniero de Telecomunicaciones",
+    "estudios": "Ingeniería de Telecomunicaciones",
+    "certificaciones": [
+      "Certificación en Redes de Datos",
+      "Certificación en Telecomunicaciones Móviles"
+    ]
+  },
+  {
+    "fotoPerfil": "https://example.com/foto20.jpg",
+    "nombre": "Laura Pérez Martínez",
+    "direccion": "Calle de las Flores, Dirección 37",
+    "cargo": "Filósofa",
+    "estudios": "Licenciatura en Filosofía",
+    "certificaciones": [
+      "Certificación en Ética Profesional",
+      "Certificación en Filosofía Política"
+    ]
+  }
+]
