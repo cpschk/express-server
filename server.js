@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const PORT = 5000; // Puedes usar cualquier puerto que desees
+const PORT = 3111; // Puedes usar cualquier puerto que desees
 
 // Conexión a la base de datos MongoDB
 mongoose.connect('mongodb://localhost:27017/perfilesDB', {
