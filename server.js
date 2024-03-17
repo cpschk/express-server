@@ -53,7 +53,8 @@ app.post('/llamar-funcion-python', (req, res) => {
   try {
     const data = req.body; 
     const jsonData = JSON.stringify(data); 
-    const pythonProcess = exec('python lenticular_function.py', (error, stdout, stderr) => {
+    const pythonProcess = exec('python lenticular_function.py', { maxBuffer: 1024 * 1024 * 10 }, (error, stdout, stderr) => {
+    // const pythonProcess = exec('python lenticular_function.py', (error, stdout, stderr) => {
       if (error) {
         console.error(`Error al ejecutar la función: ${error}`);
         return res.status(500).send('Error interno del servidor');
