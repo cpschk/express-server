@@ -5,7 +5,7 @@ const { exec } = require('child_process');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3111; 
+const PORT = 3100; 
 
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
