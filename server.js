@@ -1,21 +1,22 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const { exec } = require('child_process');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3111; // Puedes usar cualquier puerto que desees
+const PORT = 3100; 
 
-// Conexión a la base de datos MongoDB
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+
 mongoose.connect('mongodb://localhost:27017/perfilesDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
 
-// Middleware para habilitar CORS
 app.use(cors());
 
-// Definir el modelo de datos
 const PerfilUsuario = mongoose.model('PerfilUsuario', {
   user_is: String,
   fotoPerfil: String,
@@ -26,21 +27,12 @@ const PerfilUsuario = mongoose.model('PerfilUsuario', {
   certificaciones: [{ type: String }] 
 });
 
-// Middleware para analizar solicitudes JSON
 app.use(bodyParser.json());
 
-// Ruta para manejar solicitudes POST
-// app.post('/perfil', async (req, res) => {
-//   try {
-//     const perfil = new PerfilUsuario(req.body);
-//     await perfil.save();
-//     res.status(201).send(perfil);
-//   } catch (error) {
-//     res.status(400).send(error);
-//   }
-// });
+app.get('/', (req, res) => {
+  res.send('¡Hola mundo desde Express!');
+});
 
-// Ruta para manejar solicitudes Get
 app.get('/perfil', async (req, res) => {
     console.log('obteniendo datos de perfil')
     try {
@@ -51,7 +43,6 @@ app.get('/perfil', async (req, res) => {
     }
   });
 
-// En tu servidor Express
 app.get('/cargos', async (req, res) => {
   try {
     const cargos = await PerfilUsuario.distinct('cargo');
@@ -61,9 +52,38 @@ app.get('/cargos', async (req, res) => {
     res.status(500).json({ message: 'Error al obtener los cargos' });
   }
 });
-  
 
-// Iniciar el servidor
+app.post('/llamar-funcion-python', (req, res) => {
+  try {
+    const data = req.body; 
+    const jsonData = JSON.stringify(data); 
+    const pythonProcess = exec('python lenticular_function.py', { maxBuffer: 1024 * 1024 * 10 }, (error, stdout, stderr) => {
+    // const pythonProcess = exec('python lenticular_function.py', (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error al ejecutar la función: ${error}`);
+        return res.status(500).send('Error interno del servidor');
+      }
+      const result = JSON.parse(stdout); 
+      console.log('se obtuvo result')
+      res.json(result); 
+    });
+
+    pythonProcess.stdin.write(jsonData); 
+    pythonProcess.stdin.end(); 
+  } catch (err) {
+    console.error(`Error interno del servidor: ${err}`);
+    res.status(500).send('Error interno del servidor');
+  }
+});
+
+app.use((err, req, res, next) => {
+  if (err instanceof SyntaxError && err.status === 400 && 'body' in err) {
+    res.status(400).send({ error: 'Invalid JSON payload' });
+  } else {
+    next();
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Servidor iniciado en el puerto ${PORT}`);
 });
