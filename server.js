@@ -49,9 +49,10 @@ app.get('/cargos', async (req, res) => {
   }
 });
 
-app.post('/llamar-funcion-python', (req, res) => {
+app.post('/llamar-funcion-python', async (req, res) => {
   try {
     const data = req.body; 
+    console.log('recibiendo datos')
     const jsonData = JSON.stringify(data); 
     const pythonProcess = exec('python lenticular_function.py', { maxBuffer: 1024 * 1024 * 10 }, (error, stdout, stderr) => {
     // const pythonProcess = exec('python lenticular_function.py', (error, stdout, stderr) => {
