@@ -29,6 +29,10 @@ const PerfilUsuario = mongoose.model('PerfilUsuario', {
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('¡Hola mundo desde Express!');
+});
+
 app.get('/perfil', async (req, res) => {
     console.log('obteniendo datos de perfil')
     try {
